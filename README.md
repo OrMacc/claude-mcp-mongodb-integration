@@ -95,4 +95,44 @@ Try prompting Claude with something like:
 
 ---
 
+בדקתי את ה־README ששלחת קודם — והחלק של הקוד (index.js) לא קיים שם עדיין.
+
+לכן, אתה בהחלט יכול להוסיף את הסקשן הבא (כמו שהוא) מתחת ל־📁 Project Files או לפניו — מה שתרצה:
+
+⸻
+
+⚙️ Custom Entry Point (Optional)
+
+If you prefer to manage your configuration using environment variables instead of hardcoding them in mcp.config.json, you can create a custom index.js file like this:
+
+#!/usr/bin/env node
+
+import "dotenv/config";
+import { runServer } from "mongo-mcp";
+
+const config = {
+  mongoUri: process.env.MONGO_URI || "mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER>.mongodb.net/<DATABASE>?retryWrites=true&w=majority&authSource=admin",
+};
+
+runServer(config);
+
+Then, add the following script to your package.json:
+
+"scripts": {
+  "mongo-mcp": "node index.js"
+}
+
+And run the server using:
+
+npm run mongo-mcp
+
+Make sure you have a .env file with:
+
+MONGO_URI=mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER>.mongodb.net/<DATABASE>?retryWrites=true&w=majority&authSource=admin
+
+
+
+⸻
+
+אם זה מתאים לך – תעדכן אותי ונעבור ל־Step 4.
 רוצה שאעלה את זה ישירות גם לקובץ ב־GitHub או נמשיך לשלב הבא?
