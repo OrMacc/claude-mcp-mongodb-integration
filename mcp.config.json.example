@@ -1,1 +1,16 @@
 
+{
+  "mcpServers": {
+    "mongo-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "mongo-mcp",
+        "--config",
+        "{\"mongoUri\":\"mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER>.mongodb.net/<DATABASE>?retryWrites=true&w=majority&authSource=admin\"}"
+      ]
+    }
+  }
+}
