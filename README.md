@@ -15,14 +15,14 @@ This is not an official MongoDB integration.
 ## 📦 Prerequisites
 
 Access to a running MongoDB database (e.g., MongoDB Atlas or local):
- 	- Atlas account (For easy registeration - [MongoDB Atlas]([url](http://bit.ly/4j0xr1I))
-	- Create a Free or use an exising cluster -** Do not use a production cluster!**
- 	- It is reccomended to the Desktop DB UI -[ MongoDB Compass]([url](https://www.mongodb.com/products/tools/compass)) 
+- [Atlas account](http://bit.ly/4j0xr1I))
+- Create a Free or use an exising cluster -** Do not use a production cluster!**
+- MongoDB Desktop UI - [MongoDB Compass](https://www.mongodb.com/products/tools/compass)
 
 Make sure you have the following installed and ready:
 - [Node.js](https://nodejs.org/en) - version 18 or higher
-- npm [npm install](https://docs.npmjs.com/cli/v8/commands/npm-install)
-- Claude desktop with tool support enabled [Claude desktor ]([url](https://claude.ai/download))
+- [npm](https://docs.npmjs.com/cli/v8/commands/npm-install)
+- [Claude desktor](https://claude.ai/download) - with tool support enabled 
 
 
 ## 🛠 Setup Instructions
