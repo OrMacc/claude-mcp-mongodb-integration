@@ -17,7 +17,7 @@ This is not an official MongoDB integration.
 Access to a running MongoDB database (e.g., MongoDB Atlas or local):
 - [Atlas account](http://bit.ly/4j0xr1I))
 - [MongoDB Cluster](https://www.mongodb.com/docs/guides/atlas/cluster/)  -** Do not use a production cluster!**
-- (Optional) [MongoDB Compass](https://www.mongodb.com/products/tools/compass) Easy Desktop UI - 
+- [MongoDB Compass](https://www.mongodb.com/products/tools/compass) Easy Desktop UI (Optional) 
 
 Make sure you have the following installed and ready:
 - [Node.js](https://nodejs.org/en) - version 18 or higher
