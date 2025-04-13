@@ -1,0 +1,14 @@
+{
+  "name": "claude-mongo-mcp",
+  "version": "1.0.0",
+  "description": "Connect MongoDB to Claude using MCP",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @smithery/cli run mongo-mcp"
+  },
+  "dependencies": {
+    "@smithery/cli": "^1.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
