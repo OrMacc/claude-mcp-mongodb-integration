@@ -14,9 +14,10 @@ This is not an official MongoDB integration.
 
 ## 📦 Prerequisites
 
-- Access to a running MongoDB database (e.g., MongoDB Atlas or local)
+Access to a running MongoDB database (e.g., MongoDB Atlas or local):
  	- Atlas account (For easy registeration - [MongoDB Atlas]([url](http://bit.ly/4j0xr1I))
 	- Create a Free or use an exising cluster -** Do not use a production cluster!**
+ 	- It is reccomended to the Desktop DB UI -[ MongoDB Compass]([url](https://www.mongodb.com/products/tools/compass)) 
 
 Make sure you have the following installed and ready:
 - Node.js [(version 18 or higher)]([url](https://nodejs.org/en))
