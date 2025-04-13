@@ -48,7 +48,8 @@ Follow the steps in the link below to set up a mongoDB database
 - Dont forget to add a db user. It is required before generating the mongoUri_Node.js in the next step.
 - https://www.mongodb.com/docs/guides/atlas/cluster/
 
-To continue, you must get your Node.js connection string from Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
+**🛑🛑To continue, you must get your Node.js connection string from Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
+🛑🛑**
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
 ⸻
@@ -56,19 +57,19 @@ To continue, you must get your Node.js connection string from Atlas - https://ww
 
 ### 3. Run the MCP server
 
-In your terminal, Replace {mongoUri_Node.js} with your connection string above and run:
+In your terminal, Replace {mongoUri_Node.js} with the connection string you got above and run:
 
 ```bash
 npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"<mongoUri_Node.js>\"}"
 ```
-- Dont forget to replace {mongoUri_Node.js} with your connection string
+- Dont forget to replace {mongoUri_Node.js} with your connection string.
 
-This will start a local server that Claude can connect to.
+This will start a local server that Claude can connect to in the next step.
 
 
 ⸻
 
-### 4. Update the mcp.config.json file
+### 4. Update Claude mcp.config.json file
 
 In the root of the project, Update a file named mcp.config.json with the following content and replace mongoUri_Node.js per instructions below:
 ```bash
