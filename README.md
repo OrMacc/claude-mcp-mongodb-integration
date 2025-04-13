@@ -30,7 +30,7 @@ Make sure you have the following installed and ready:
 ### 1. Clone this repository and install the required CLI
 
 ```bash
-git clone https://github.com/<your-username>/claude-mongo-mcp
+git clone https://github.com/OrMacc/claude-mcp-mongodb-integration
 cd claude-mongo-mcp
 npm install @smithery/cli
 ```
@@ -38,9 +38,18 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 
 ⸻
 
-### 2. Create the mcp.config.json file
+### 2. Set up your Atlas account
 
-In the root of the project, create a file named mcp.config.json with the following content:
+Follow the steps in - https://www.mongodb.com/docs/guides/atlas/cluster/
+- Dont forget to add a db user. It is required before generating the mongoUri_Node.js in the next step.
+
+
+
+⸻
+
+### 3. Update the mcp.config.json file
+
+In the root of the project, Update a file named mcp.config.json with the following content and replace mongoUri_Node.js per instructions below:
 ```bash
 
 {
@@ -53,17 +62,15 @@ In the root of the project, create a file named mcp.config.json with the followi
         "run",
         "mongo-mcp",
         "--config",
-        "{\"mongoUri\":\"mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER>.mongodb.net/<DATABASE>?retryWrites=true&w=majority&authSource=admin\"}"
+        "{\"mongoUri\":\"{mongoUri_Node.js}"}"
       ]
     }
   }
 }
 ```
-Replace the placeholders:
-	•	<USERNAME> — your MongoDB username
-	•	<PASSWORD> — your MongoDB password
-	•	<CLUSTER> — your MongoDB cluster address
-	•	<DATABASE> — name of the database you want Claude to access
+Replace the {mongoUri_Node.js} part with your NodeJS connection sting from mongo atlas https://www.mongodb.com/docs/guides/atlas/connection-string/
+
+<img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
 ⸻
 
