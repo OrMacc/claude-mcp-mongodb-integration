@@ -2,7 +2,7 @@
 
 -** Do not use a production cluster!**
 
-> **⚠️ Disclaimer**
+**⚠️ Disclaimer**
 > This is a personal project and not officially affiliated with MongoDB Inc.
 > It’s intended for educational use only and not recommended for production.
 > Use at your own discretion — you're responsible for any risks or consequences.
