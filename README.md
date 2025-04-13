@@ -106,5 +106,7 @@ Once you see the MCP tools try prompting Claude with something like:
 - 🔐 Control permissions.
 
 Follow for more:
-![image](https://github.com/user-attachments/assets/ae1cbde6-3159-4dd2-8fa5-de5b707423d6)https://www.linkedin.com/in/ormaccabi/
+![image](https://github.com/user-attachments/assets/c0e0d3fe-cd28-4a30-a088-8b2ca91c674e)
+
+https://www.linkedin.com/in/ormaccabi/
 
