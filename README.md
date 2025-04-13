@@ -53,11 +53,11 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 ### Update Claude claude_desktop_config.json file
 
 ⚙️ Connect the Tool in Claude
-	1.	Open the Claude desktop app
-	2.	Go to Settings → Developer
-	3.	Click “Edit config”
- 	4. 	Open the claude_desktop_config.json file and 
-  	5. 	Update it with the following content and replace <mongoUri_Node.js> per instructions below:
+1. Open the Claude desktop app
+2. Go to Settings → Developer
+3. Click “Edit config”
+4. Open the claude_desktop_config.json file and 
+5. Update it with the following content and replace <mongoUri_Node.js> per instructions below:
 
 ```bash
 
