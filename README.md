@@ -10,8 +10,8 @@
 This project explains how to connect your own MongoDB database to Claude using the Model Context Protocol (MCP). Once connected, Claude will be able to query your database using natural language.
 This is not an official MongoDB integration. 
 
----
 
+-
 
 # 📦 Prerequisites
 
@@ -26,11 +26,11 @@ Make sure you have the following installed and ready:
 - [Claude desktor](https://claude.ai/download) 
 
 
-
+-
 # 🛠 Setup Instructions
 
 
-
+-
 ## 1. Install the required @smithery/cli 
 
 ```bash
@@ -39,7 +39,7 @@ npm install @smithery/cli
 The @smithery/cli is used to run the MCP server that connects your MongoDB database to Claude.
 
 
-
+-
 ## 2. Get your MongoDB_URI (for Node.js) connection string and Connect to MongoDB Compass
 - Connect to Compass to easly see the data in your DB.
 - Get your MongoDB_URI (for Node.js) connection string in MongoDB Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
@@ -48,10 +48,9 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
 
-
+-
 ## 3. Update Claude claude_desktop_config.json file
 
-⚙️ Connect the Tool in Claude
 1. Open the Claude desktop app
 2. Go to Settings → Developer
 3. Click “Edit config”
@@ -76,6 +75,7 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
   }
 }
 ```
+
 **Replace the <mongoUri_Node.js> part with your  MongoDB_URI (for Node.js) connection sting that you got above.**
 
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
@@ -90,8 +90,8 @@ If everything is correct, you should see an icon of a Hammer and a number (8 too
 Claude will now have access to your MongoDB database
 
 
-⸻
 
+-
 ##🧪 Usage Example
 
 Once you see the MCP tools try prompting Claude with something like:
@@ -99,10 +99,12 @@ Once you see the MCP tools try prompting Claude with something like:
 “Show me all my collections”
 “Create a new collection of Users and insert a document that is relevant”
 
-⸻
 
+-
 ##🔒 Security Notes
 - 🧪 Use a test environment. This setup is meant for experimentation and learning. We highly recommend using a dedicated test cluster or database — not your production environment.
 - 🔐 Control permissions.
-⸻
+
+Follow for more:
+![image](https://github.com/user-attachments/assets/ae1cbde6-3159-4dd2-8fa5-de5b707423d6)https://www.linkedin.com/in/ormaccabi/
 
