@@ -11,7 +11,7 @@ This project explains how to connect your own MongoDB database to Claude using t
 This is not an official MongoDB integration. 
 
 
--
+ 
 
 # 📦 Prerequisites
 
@@ -26,11 +26,11 @@ Make sure you have the following installed and ready:
 - [Claude desktor](https://claude.ai/download) 
 
 
--
+ 
 # 🛠 Setup Instructions
 
 
--
+
 ## 1. Install the required @smithery/cli 
 
 ```bash
@@ -39,7 +39,7 @@ npm install @smithery/cli
 The @smithery/cli is used to run the MCP server that connects your MongoDB database to Claude.
 
 
--
+
 ## 2. Get your MongoDB_URI (for Node.js) connection string and Connect to MongoDB Compass
 - Connect to Compass to easly see the data in your DB.
 - Get your MongoDB_URI (for Node.js) connection string in MongoDB Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
@@ -48,7 +48,7 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
 
--
+
 ## 3. Update Claude claude_desktop_config.json file
 
 1. Open the Claude desktop app
@@ -91,7 +91,7 @@ Claude will now have access to your MongoDB database
 
 
 
--
+ 
 ##🧪 Usage Example
 
 Once you see the MCP tools try prompting Claude with something like:
@@ -100,13 +100,11 @@ Once you see the MCP tools try prompting Claude with something like:
 “Create a new collection of Users and insert a document that is relevant”
 
 
--
+
 ##🔒 Security Notes
 - 🧪 Use a test environment. This setup is meant for experimentation and learning. We highly recommend using a dedicated test cluster or database — not your production environment.
 - 🔐 Control permissions.
 
 Follow for more:
-![image](https://github.com/user-attachments/assets/c0e0d3fe-cd28-4a30-a088-8b2ca91c674e)
-
 https://www.linkedin.com/in/ormaccabi/
 
