@@ -16,7 +16,7 @@ This is not an official MongoDB integration.
 ## 📦 Prerequisites
 
 Access to a running MongoDB database (e.g., MongoDB Atlas or local):
-- [Atlas account](http://bit.ly/4j0xr1I))
+- [Atlas account](http://bit.ly/4j0xr1I)
 - [MongoDB Cluster](https://www.mongodb.com/docs/guides/atlas/cluster/)  -** Do not use a production cluster!**
 - [MongoDB Compass](https://www.mongodb.com/products/tools/compass) Easy Desktop UI (Optional) 
 
