@@ -74,7 +74,7 @@ Replace the {mongoUri_Node.js} part with your NodeJS connection sting from mongo
 
 ⸻
 
-4. Run the MCP server
+### 4. Run the MCP server
 
 In your terminal, run the following command to start the MCP server:
 
@@ -83,6 +83,10 @@ npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"your-full-mongo-uri\"}
 Make sure to replace your-full-mongo-uri with the same connection string you used in the mcp.config.json.
 
 This will start a local server that Claude can connect to.
+
+```bash
+npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"your-full-mongo-uri\"}"
+```
 
 ⸻
 
