@@ -44,8 +44,7 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 - Connect to Compass to easly see the data in your DB.
 - Get your MongoDB_URI (for Node.js) connection string in MongoDB Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
 
-**🛑🛑To continue, you must get your Node.js connection string from Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
-🛑🛑**
+**🛑🛑To continue, you must get your Node.js connection string from Atlas🛑🛑**
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
 
