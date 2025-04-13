@@ -13,7 +13,7 @@ This is not an official MongoDB integration.
 ---
 
 
-## 📦 Prerequisites
+# 📦 Prerequisites
 
 Access to a running MongoDB database (e.g., MongoDB Atlas or local):
 - [Atlas account](http://bit.ly/4j0xr1I)
@@ -27,7 +27,9 @@ Make sure you have the following installed and ready:
 
 
 
-## 🛠 Setup Instructions
+# 🛠 Setup Instructions
+
+
 
 ## 1. Install the required @smithery/cli 
 
@@ -36,8 +38,6 @@ npm install @smithery/cli
 ```
 The @smithery/cli is used to run the MCP server that connects your MongoDB database to Claude.
 
-
-⸻
 
 
 ## 2. Get your MongoDB_URI (for Node.js) connection string and Connect to MongoDB Compass
@@ -48,9 +48,8 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
 
-⸻
 
-## Update Claude claude_desktop_config.json file
+## 3. Update Claude claude_desktop_config.json file
 
 ⚙️ Connect the Tool in Claude
 1. Open the Claude desktop app
@@ -81,10 +80,12 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
-⸻
 
-Relaunch Claude - Sometimes it takes 2-3 time of relaunching to see the MCP tools. 
-If everything is correct, you should see an icon of a Hammer and a number (8 tools) next to Claude text box 
+Relaunch Claude - Sometimes it takes 2-3 times of relaunching to see the MCP tools. 
+If everything is correct, you should see an icon of a Hammer and a number (8 tools) next to Claude text box:
+
+![image](https://github.com/user-attachments/assets/5f6a3534-793f-4f7c-bcb5-5e6e79491bef)
+
 
 Claude will now have access to your MongoDB database
 
@@ -93,14 +94,14 @@ Claude will now have access to your MongoDB database
 
 ##🧪 Usage Example
 
-Try prompting Claude with something like:
+Once you see the MCP tools try prompting Claude with something like:
 
-“Show me all documents in the users collection.”
-“How many orders were placed last month in the orders collection?”
+“Show me all my collections”
+“Create a new collection of Users and insert a document that is relevant”
 
 ⸻
 
-🔒 Security Notes
+##🔒 Security Notes
 - 🧪 Use a test environment. This setup is meant for experimentation and learning. We highly recommend using a dedicated test cluster or database — not your production environment.
 - 🔐 Control permissions.
 ⸻
