@@ -17,23 +17,21 @@ This is not an official MongoDB integration.
 
 Access to a running MongoDB database (e.g., MongoDB Atlas or local):
 - [Atlas account](http://bit.ly/4j0xr1I)
-- [MongoDB Cluster](https://www.mongodb.com/docs/guides/atlas/cluster/)  -** Do not use a production cluster!**
-- [MongoDB Compass](https://www.mongodb.com/products/tools/compass) Easy Desktop UI (Optional) 
+- [Set a MongoDB Cluster](https://www.mongodb.com/docs/guides/atlas/cluster/)  -** Do not use a production cluster!**
+- [Download MongoDB Compass For Easy Desktop UI (Optional)](https://www.mongodb.com/products/tools/compass) 
 
 Make sure you have the following installed and ready:
 - [Node.js](https://nodejs.org/en) - version 18 or higher
 - [npm](https://docs.npmjs.com/cli/v8/commands/npm-install)
-- [Claude desktor](https://claude.ai/download) - with tool support enabled 
+- [Claude desktor](https://claude.ai/download) 
 
 
 
 ## 🛠 Setup Instructions
 
-### 1. Clone this repository and install the required CLI
+### 1. Install the required @smithery/cli 
 
 ```bash
-git clone https://github.com/OrMacc/claude-mcp-mongodb-integration
-cd claude-mongo-mcp
 npm install @smithery/cli
 ```
 The @smithery/cli is used to run the MCP server that connects your MongoDB database to Claude.
@@ -42,36 +40,26 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 ⸻
 
 
-### 2. Set up your Atlas account
-
-Follow the steps in the link below to set up a mongoDB database  
-- Dont forget to add a db user. It is required before generating the mongoUri_Node.js in the next step.
-- https://www.mongodb.com/docs/guides/atlas/cluster/
+### 2. Get your MongoDB_URI (for Node.js) connection string and Connect to MongoDB Compass
+- Connect to Compass to easly see the data in your DB.
+- Get your MongoDB_URI (for Node.js) connection string in MongoDB Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
 
 **🛑🛑To continue, you must get your Node.js connection string from Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
 🛑🛑**
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
-⸻
-
-
-### 3. Run the MCP server
-
-In your terminal, Replace {mongoUri_Node.js} with the connection string you got above and run:
-
-```bash
-npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"<mongoUri_Node.js>\"}"
-```
-- Dont forget to replace {mongoUri_Node.js} with your connection string.
-
-This will start a local server that Claude can connect to in the next step.
-
 
 ⸻
 
-### 4. Update Claude mcp.config.json file
+### Update Claude claude_desktop_config.json file
 
-In the root of the project, Update a file named mcp.config.json with the following content and replace mongoUri_Node.js per instructions below:
+⚙️ Connect the Tool in Claude
+	1.	Open the Claude desktop app
+	2.	Go to Settings → Developer
+	3.	Click “Edit config”
+ 	4. 	Open the claude_desktop_config.json file and 
+  	5. 	Update it with the following content and replace <mongoUri_Node.js> per instructions below:
+
 ```bash
 
 {
@@ -90,19 +78,17 @@ In the root of the project, Update a file named mcp.config.json with the followi
   }
 }
 ```
-Replace the {mongoUri_Node.js} part with your Node.js connection sting from mongo atlas https://www.mongodb.com/docs/guides/atlas/connection-string/
+**Replace the <mongoUri_Node.js> part with your  MongoDB_URI (for Node.js) connection sting that you got above.**
 
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
-
 ⸻
 
-⚙️ Connect the Tool in Claude
-	1.	Open the Claude desktop app
-	2.	Go to Settings → Tools
-	3.	Click “Connect to a Tool”
-	4.	Select mongo-mcp
-	5.	If everything is correct, Claude will now have access to your MongoDB database
+Relaunch Claude - Sometimes it takes 2-3 time of relaunching to see the MCP tools. 
+If everything is correct, you should see an icon of a Hammer and a number (8 tools) next to Claude text box 
+
+Claude will now have access to your MongoDB database
+
 
 ⸻
 
