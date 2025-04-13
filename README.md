@@ -12,7 +12,7 @@ This is not an official MongoDB integration.
 
 
  
-
+ 
 # 📦 Prerequisites
 
 Access to a running MongoDB database (e.g., MongoDB Atlas or local):
@@ -92,7 +92,7 @@ Claude will now have access to your MongoDB database
 
 
  
-##🧪 Usage Example
+## 🧪 Usage Example
 
 Once you see the MCP tools try prompting Claude with something like:
 
@@ -101,7 +101,7 @@ Once you see the MCP tools try prompting Claude with something like:
 
 
 
-##🔒 Security Notes
+## 🔒 Security Notes
 - 🧪 Use a test environment. This setup is meant for experimentation and learning. We highly recommend using a dedicated test cluster or database — not your production environment.
 - 🔐 Control permissions.
 
