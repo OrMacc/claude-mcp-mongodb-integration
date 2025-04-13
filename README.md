@@ -1,6 +1,6 @@
 # Connect MongoDB to Claude via MCP
 
--** Do not use a production cluster!**
+**Do not use a production cluster!**
 
 **⚠️ Disclaimer**
 > This is a personal project and not officially affiliated with MongoDB Inc.
