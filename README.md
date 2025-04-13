@@ -12,6 +12,7 @@ This is not an official MongoDB integration.
 
 ---
 
+
 ## 📦 Prerequisites
 
 Access to a running MongoDB database (e.g., MongoDB Atlas or local):
@@ -25,6 +26,7 @@ Make sure you have the following installed and ready:
 - [Claude desktor](https://claude.ai/download) - with tool support enabled 
 
 
+
 ## 🛠 Setup Instructions
 
 ### 1. Clone this repository and install the required CLI
@@ -36,18 +38,37 @@ npm install @smithery/cli
 ```
 The @smithery/cli is used to run the MCP server that connects your MongoDB database to Claude.
 
+
 ⸻
+
 
 ### 2. Set up your Atlas account
 
-Follow the steps in - https://www.mongodb.com/docs/guides/atlas/cluster/
+Follow the steps in the link below to set up a mongoDB database  
 - Dont forget to add a db user. It is required before generating the mongoUri_Node.js in the next step.
+- https://www.mongodb.com/docs/guides/atlas/cluster/
 
+To continue, you must get your Node.js connection string from Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
+<img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
+
+⸻
+
+
+### 3. Run the MCP server
+
+In your terminal, Replace {mongoUri_Node.js} with your connection string above and run:
+
+```bash
+npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"<mongoUri_Node.js>\"}"
+```
+- Dont forget to replace {mongoUri_Node.js} with your connection string
+
+This will start a local server that Claude can connect to.
 
 
 ⸻
 
-### 3. Update the mcp.config.json file
+### 4. Update the mcp.config.json file
 
 In the root of the project, Update a file named mcp.config.json with the following content and replace mongoUri_Node.js per instructions below:
 ```bash
@@ -72,23 +93,6 @@ Replace the {mongoUri_Node.js} part with your Node.js connection sting from mong
 
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
-⸻
-
-### 4. Run the MCP server
-
-In your terminal, run the following command to start the MCP server:
-
-npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"your-full-mongo-uri\"}"
-
-Make sure to replace your-full-mongo-uri with the same connection string you used in the mcp.config.json.
-
-This will start a local server that Claude can connect to.
-
-Replace {mongoUri_Node.js} with your connection string above and run:
-
-```bash
-npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"<mongoUri_Node.js>\"}"
-```
 
 ⸻
 
