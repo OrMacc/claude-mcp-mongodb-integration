@@ -84,8 +84,8 @@ Try prompting Claude with something like:
 ⸻
 
 🔒 Security Notes
-	•	The file mcp.config.json is listed in .gitignore to prevent accidental exposure of credentials.
 	•	This tool gives read-only access to your database (depending on user permissions).
+
 
 ⸻
 
