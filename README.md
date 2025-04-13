@@ -62,13 +62,13 @@ In the root of the project, Update a file named mcp.config.json with the followi
         "run",
         "mongo-mcp",
         "--config",
-        "{\"mongoUri\":\"{mongoUri_Node.js}"}"
+        "{\"mongoUri\":\"<mongoUri_Node.js>\"}"
       ]
     }
   }
 }
 ```
-Replace the {mongoUri_Node.js} part with your NodeJS connection sting from mongo atlas https://www.mongodb.com/docs/guides/atlas/connection-string/
+Replace the {mongoUri_Node.js} part with your Node.js connection sting from mongo atlas https://www.mongodb.com/docs/guides/atlas/connection-string/
 
 <img width="1720" alt="image" src="https://github.com/user-attachments/assets/d957d2b2-787d-48cf-8e44-8e09c44f1551" />
 
@@ -84,8 +84,10 @@ Make sure to replace your-full-mongo-uri with the same connection string you use
 
 This will start a local server that Claude can connect to.
 
+Replace {mongoUri_Node.js} with your connection string above and run:
+
 ```bash
-npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"your-full-mongo-uri\"}"
+npx @smithery/cli run mongo-mcp --config "{\"mongoUri\":\"<mongoUri_Node.js>\"}"
 ```
 
 ⸻
