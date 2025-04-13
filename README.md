@@ -20,8 +20,8 @@ Access to a running MongoDB database (e.g., MongoDB Atlas or local):
  	- It is reccomended to the Desktop DB UI -[ MongoDB Compass]([url](https://www.mongodb.com/products/tools/compass)) 
 
 Make sure you have the following installed and ready:
-- Node.js [(version 18 or higher)]([url](https://nodejs.org/en))
-- npm [nom install](https://docs.npmjs.com/cli/v8/commands/npm-install)
+- [Node.js](https://nodejs.org/en) - version 18 or higher
+- npm [npm install](https://docs.npmjs.com/cli/v8/commands/npm-install)
 - Claude desktop with tool support enabled [Claude desktor ]([url](https://claude.ai/download))
 
 
