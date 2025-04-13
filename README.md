@@ -29,7 +29,7 @@ Make sure you have the following installed and ready:
 
 ## 🛠 Setup Instructions
 
-### 1. Install the required @smithery/cli 
+## 1. Install the required @smithery/cli 
 
 ```bash
 npm install @smithery/cli
@@ -40,7 +40,7 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 ⸻
 
 
-### 2. Get your MongoDB_URI (for Node.js) connection string and Connect to MongoDB Compass
+## 2. Get your MongoDB_URI (for Node.js) connection string and Connect to MongoDB Compass
 - Connect to Compass to easly see the data in your DB.
 - Get your MongoDB_URI (for Node.js) connection string in MongoDB Atlas - https://www.mongodb.com/docs/guides/atlas/connection-string/
 
@@ -50,7 +50,7 @@ The @smithery/cli is used to run the MCP server that connects your MongoDB datab
 
 ⸻
 
-### Update Claude claude_desktop_config.json file
+## Update Claude claude_desktop_config.json file
 
 ⚙️ Connect the Tool in Claude
 1. Open the Claude desktop app
@@ -91,7 +91,7 @@ Claude will now have access to your MongoDB database
 
 ⸻
 
-🧪 Usage Example
+##🧪 Usage Example
 
 Try prompting Claude with something like:
 
