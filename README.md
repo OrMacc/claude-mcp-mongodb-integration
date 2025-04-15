@@ -108,3 +108,12 @@ Once you see the MCP tools try prompting Claude with something like:
 Follow for more:
 https://www.linkedin.com/in/ormaccabi/
 
+# Q&A:
+
+❗️Troubleshooting Permissions
+``` 
+If you get an error during `npm install` that includes `EACCES`, `EPERM`, or similar permission issues, it's likely due to file ownership problems in your `.npm` directory. You can fix it by resetting permissions:
+For example, on macOS:
+```bash
+sudo chown -R $(whoami) ~/.npm
+``` 
